@@ -3,8 +3,8 @@ Config = {}
 Config.Version = 4.2
 
 --Discord sender
-Config.WebhookDiscord = "" -- Discord Webhook
-Config.DropMsg = "Don't use cheat! Discord: https://discord.gg/BW5KA78SXW"
+Config.WebhookDiscord = "https://discord.com/api/webhooks/922871846955790348/igYCIXIGwHhG_aPF25UybGFRqIG-Bd809Br_TKfnE5MprYuZV0D_zdwYfv3GlGLQvMuR" -- Discord Webhook
+Config.DropMsg = "Don't use cheats! Discord: Nope"
 Config.ReasonBanned = "You are restricted from connecting to our server. Please contact us!."
 
 ------------------------------------
@@ -12,20 +12,20 @@ Config.ReasonBanned = "You are restricted from connecting to our server. Please 
 ------------------------------------
 
 Config.BasicEnable = true -- This must be set in true do the Anticheat works as intended.
-Config.AntiExplosionDamage = true -- This prevents players from being killed by Explosions.
+Config.AntiExplosionDamage = false -- This prevents players from being killed by Explosions.
 Config.AntiGodMode = true -- Detects most of GodMode Cheats and Logs/Bans them.
-Config.AntiRagdoll = true -- Detects Anti-Ragdoll cheats.
+Config.AntiRagdoll = false -- Detects Anti-Ragdoll cheats.
 Config.AntiInvisible = true -- Detects if the player is Invisible.
-Config.AntiRadar = true -- Detects if Radar (Minimap) is enabled. If by default in your server you have enabled minimap, disable this option, otherwise you'll get bans.
+Config.AntiRadar = false -- Detects if Radar (Minimap) is enabled. If by default in your server you have enabled minimap, disable this option, otherwise you'll get bans.
 Config.AntiExplosiveBullets = true -- Detects if players have Explosive Weapons.
 Config.AntiSpectate = true -- Detects if player enters in spectator mode
 Config.AntiSpeedHacks = true -- Prevents players from using Speed Mods
 Config.AntiThermalVision = true -- Detects if player is using Thermal Vision.
 Config.AntiNightVision = true -- Detects if player is using Night Vision.
-Config.AntiPedChange = true -- Detects if Player has changed it's ped
+Config.AntiPedChange = false -- Detects if Player has changed it's ped
 Config.AntiFreeCam = true -- Detects if Player is Using Freecam
 Config.AntiMenyoo = true -- Detects if Player Injects Menyoo
-Config.AntiGiveArmor = true -- Detects Give-Armor Cheats 
+Config.AntiGiveArmor = false -- Detects Give-Armor Cheats 
 Config.AntiAimAssist = true -- Prevents players from activating Aim-Assist (GTA V)
 Config.SuperJump = true -- Prevents player from using Super-Jump
 Config.AntiResourceStartorStop = true -- Prevents Cheaters from Stopping/Starting new Resource
@@ -39,11 +39,11 @@ Config.AntiCHNG = true -- Anti Cheat Engine
 Config.AntiSpawnObjects = true
 Config.AntiSpawnVehicles = true
 Config.AntiSpawnPeds = true
-Config.DeleteBrokenCars = true -- Delete Broken Cars
+Config.DeleteBrokenCars = false -- Delete Broken Cars
 Config.AntiAimbot = true -- Anti Aimbot 
 Config.AntiEntity = false -- Anti entity Creating.
-Config.AntiTaze = true -- Anti Taze Player 
-Config.AntiGiveWeaponEvent = true -- Anti Give Weapon to Player or Ped
+Config.AntiTaze = false -- Anti Taze Player 
+Config.AntiGiveWeaponEvent = false -- Anti Give Weapon to Player or Ped
 Config.AntiBlacklistedKey = true -- Anti Blacklist Keys
 Config.AntiResource = false -- Whitelisted Resource true or false
 
@@ -86,7 +86,7 @@ Config.BlacklistedWeapons = {
     `WEAPON_EXPLOSION`,
     `WEAPON_FLARE`,
     `WEAPON_STINGER`,
-    `WEAPON_MUSKET`
+--    `WEAPON_MUSKET`
 }
 
 Config.BlacklistedObjects = { 
@@ -463,7 +463,7 @@ Config.BlacklistedCommands = {
 	"d0pamine",
 	"lynx",
 	"brutan",
-	"panic",
+--	"panic",
 	"FOriv gay",
 	"TiagoModz#1478",
 	"WarMenu",
@@ -954,7 +954,7 @@ Config.Events = {
     "cylex:startHarvestMelon",
     "lh-bankrobbery:server:recieveItem",
     "esx_status:set",
-    "hospital:client:Revive",
+--    "hospital:client:Revive",
     "sp_admin:menuv",
     "sp_admin:giveCash",
     "sp_admin:giveDirtyMoney",

@@ -1,6 +1,5 @@
-ESX = nil
+QBCore = exports['qb-core']:GetCoreObject()
 
-TriggerEvent("esx:getSharedObject", function(obj) ESX = obj end)
 
 local ResourceMetadata = {}
 local ResourceFiles = {}

@@ -1,11 +1,5 @@
-ESX = nil
+QBCore = exports['qb-core']:GetCoreObject()
 
-Citizen.CreateThread(function()
-    while ESX == nil do
-        TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-        Citizen.Wait(10)
-    end
-end)
 
 local resources
 
@@ -443,7 +437,7 @@ AddEventHandler("rwe:deletentity", function(id)
 end)
 
 ------ entitycreated v2
-RegisterNetEvent('rwe:antiPed')
+--[[RegisterNetEvent('rwe:antiPed')
 AddEventHandler('rwe:antiPed', function()
     local peds = ESX.Game.GetPeds()
     for i=1, #peds, 1 do
@@ -460,7 +454,7 @@ function isPedBlacklisted(model)
 		end
 	end
 	return false
-end
+end]]
 
 function ReqAndDelete(object, detach)
 	if DoesEntityExist(object) then
@@ -490,7 +484,7 @@ end
 
 RegisterNetEvent('rwe:AntiVehicle')
 AddEventHandler('rwe:AntiVehicle', function()
-    local vehicles = ESX.Game.GetVehicles()
+    local vehicles = QBCore.Functions.GetVehicles()
 
     for i=1, #vehicles, 1 do
         if isVehBlacklisted(vehicles[i]) then
